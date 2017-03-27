@@ -15,6 +15,7 @@
 		C36E55551E7FAA2900FF1449 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C36E55531E7FAA2900FF1449 /* Main.storyboard */; };
 		C36E55571E7FAA2900FF1449 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C36E55561E7FAA2900FF1449 /* Assets.xcassets */; };
 		C36E555A1E7FAA2900FF1449 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C36E55581E7FAA2900FF1449 /* LaunchScreen.storyboard */; };
+		C3F9630C1E88CD9D005E5DA6 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F9630B1E88CD9D005E5DA6 /* GameOverScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		C36E55561E7FAA2900FF1449 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C36E55591E7FAA2900FF1449 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C36E555B1E7FAA2900FF1449 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3F9630B1E88CD9D005E5DA6 /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				C36E55561E7FAA2900FF1449 /* Assets.xcassets */,
 				C36E55581E7FAA2900FF1449 /* LaunchScreen.storyboard */,
 				C36E555B1E7FAA2900FF1449 /* Info.plist */,
+				C3F9630B1E88CD9D005E5DA6 /* GameOverScene.swift */,
 			);
 			path = Game5;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			files = (
 				C36E55501E7FAA2900FF1449 /* GameScene.swift in Sources */,
 				C36E55521E7FAA2900FF1449 /* GameViewController.swift in Sources */,
+				C3F9630C1E88CD9D005E5DA6 /* GameOverScene.swift in Sources */,
 				C36E554A1E7FAA2900FF1449 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +316,7 @@
 				C36E55601E7FAA2900FF1449 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
