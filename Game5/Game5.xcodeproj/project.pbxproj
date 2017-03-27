@@ -8,21 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		C36E554A1E7FAA2900FF1449 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E55491E7FAA2900FF1449 /* AppDelegate.swift */; };
-		C36E554C1E7FAA2900FF1449 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = C36E554B1E7FAA2900FF1449 /* GameScene.sks */; };
-		C36E554E1E7FAA2900FF1449 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = C36E554D1E7FAA2900FF1449 /* Actions.sks */; };
 		C36E55501E7FAA2900FF1449 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E554F1E7FAA2900FF1449 /* GameScene.swift */; };
 		C36E55521E7FAA2900FF1449 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E55511E7FAA2900FF1449 /* GameViewController.swift */; };
 		C36E55551E7FAA2900FF1449 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C36E55531E7FAA2900FF1449 /* Main.storyboard */; };
 		C36E55571E7FAA2900FF1449 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C36E55561E7FAA2900FF1449 /* Assets.xcassets */; };
 		C36E555A1E7FAA2900FF1449 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C36E55581E7FAA2900FF1449 /* LaunchScreen.storyboard */; };
 		C3F9630C1E88CD9D005E5DA6 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F9630B1E88CD9D005E5DA6 /* GameOverScene.swift */; };
+		C3F963141E896AB5005E5DA6 /* Readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = C3F963121E896AB5005E5DA6 /* Readme.txt */; };
+		C3F963151E896AB5005E5DA6 /* SF Pixelate Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C3F963131E896AB5005E5DA6 /* SF Pixelate Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C36E55461E7FAA2900FF1449 /* Game5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Game5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C36E55491E7FAA2900FF1449 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C36E554B1E7FAA2900FF1449 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		C36E554D1E7FAA2900FF1449 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		C36E554F1E7FAA2900FF1449 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		C36E55511E7FAA2900FF1449 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		C36E55541E7FAA2900FF1449 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -30,6 +28,11 @@
 		C36E55591E7FAA2900FF1449 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C36E555B1E7FAA2900FF1449 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3F9630B1E88CD9D005E5DA6 /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		C3F9630E1E88CE85005E5DA6 /* woodies.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = woodies.caf; sourceTree = "<group>"; };
+		C3F9630F1E88CE85005E5DA6 /* background-music-aac.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "background-music-aac.caf"; sourceTree = "<group>"; };
+		C3F963101E88CE85005E5DA6 /* pew-pew-lei.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pew-pew-lei.caf"; sourceTree = "<group>"; };
+		C3F963121E896AB5005E5DA6 /* Readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Readme.txt; path = sf_pixelate/Readme.txt; sourceTree = "<group>"; };
+		C3F963131E896AB5005E5DA6 /* SF Pixelate Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF Pixelate Bold.ttf"; path = "sf_pixelate/SF Pixelate Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +65,9 @@
 		C36E55481E7FAA2900FF1449 /* Game5 */ = {
 			isa = PBXGroup;
 			children = (
+				C3F963111E896AA5005E5DA6 /* Font */,
+				C3F9630D1E88CE70005E5DA6 /* Sounds */,
 				C36E55491E7FAA2900FF1449 /* AppDelegate.swift */,
-				C36E554B1E7FAA2900FF1449 /* GameScene.sks */,
-				C36E554D1E7FAA2900FF1449 /* Actions.sks */,
 				C36E554F1E7FAA2900FF1449 /* GameScene.swift */,
 				C36E55511E7FAA2900FF1449 /* GameViewController.swift */,
 				C36E55531E7FAA2900FF1449 /* Main.storyboard */,
@@ -74,6 +77,25 @@
 				C3F9630B1E88CD9D005E5DA6 /* GameOverScene.swift */,
 			);
 			path = Game5;
+			sourceTree = "<group>";
+		};
+		C3F9630D1E88CE70005E5DA6 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				C3F9630E1E88CE85005E5DA6 /* woodies.caf */,
+				C3F9630F1E88CE85005E5DA6 /* background-music-aac.caf */,
+				C3F963101E88CE85005E5DA6 /* pew-pew-lei.caf */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		C3F963111E896AA5005E5DA6 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				C3F963121E896AB5005E5DA6 /* Readme.txt */,
+				C3F963131E896AB5005E5DA6 /* SF Pixelate Bold.ttf */,
+			);
+			name = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,11 +158,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3F963151E896AB5005E5DA6 /* SF Pixelate Bold.ttf in Resources */,
 				C36E55551E7FAA2900FF1449 /* Main.storyboard in Resources */,
-				C36E554C1E7FAA2900FF1449 /* GameScene.sks in Resources */,
 				C36E55571E7FAA2900FF1449 /* Assets.xcassets in Resources */,
+				C3F963141E896AB5005E5DA6 /* Readme.txt in Resources */,
 				C36E555A1E7FAA2900FF1449 /* LaunchScreen.storyboard in Resources */,
-				C36E554E1E7FAA2900FF1449 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

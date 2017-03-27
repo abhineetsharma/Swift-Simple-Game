@@ -50,7 +50,7 @@ struct PhysicsCategory {
 class GameScene: SKScene, SKPhysicsContactDelegate {
     
     // 1
-    let bgImage = SKSpriteNode(imageNamed: "game-background")
+    
     let player = SKSpriteNode(imageNamed: "player")
     
     let staticTimeLabel = SKLabelNode(fontNamed: "SF Pixelate Bold")
@@ -65,6 +65,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     override func didMove(to view: SKView) {
         // 2
+        let bgImage = SKSpriteNode(imageNamed: "game-background")
         bgImage.position = CGPoint(x: size.width/2, y: size.height/2)
         bgImage.zPosition = -1.0
         addChild(bgImage)
