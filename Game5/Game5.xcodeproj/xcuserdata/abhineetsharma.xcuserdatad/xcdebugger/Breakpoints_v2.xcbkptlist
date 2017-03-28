@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Game5/GameScene.swift"
-            timestampString = "512322492.413923"
+            timestampString = "512354096.774858"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "GameScene"
             landmarkType = "3">
             <Locations>
@@ -73,13 +73,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Game5/GameScene.swift"
-            timestampString = "512322568.495221"
+            timestampString = "512354096.774858"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "didMove(to:)"
-            landmarkType = "7">
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "GameScene"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -89,27 +89,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Game5/GameScene.swift"
-            timestampString = "512322583.302443"
+            timestampString = "512354096.774858"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
-            landmarkName = "didMove(to:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Game5/GameScene.swift"
-            timestampString = "512322681.773886"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "GameScene"
             landmarkType = "3">
             <Locations>
@@ -121,7 +105,7 @@
                   moduleName = "Game5"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/abhineetsharma/BitBucket/p05-sharma/Game5/Game5/GameScene.swift"
-                  timestampString = "512322837.569457"
+                  timestampString = "512353864.970411"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -136,7 +120,7 @@
                   moduleName = "Game5"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/abhineetsharma/BitBucket/p05-sharma/Game5/Game5/GameScene.swift"
-                  timestampString = "512322837.572048"
+                  timestampString = "512353864.973507"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "54"
@@ -147,11 +131,26 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
+                  symbolName = "Game5.GameScene.__allocating_init (size : __C.CGSize) -&gt; Game5.GameScene"
+                  moduleName = "Game5"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhineetsharma/BitBucket/p05-sharma/Game5/Game5/GameScene.swift"
+                  timestampString = "512353864.975668"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
                   symbolName = "Game5.GameScene.init () -&gt; Game5.GameScene"
                   moduleName = "Game5"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/abhineetsharma/BitBucket/p05-sharma/Game5/Game5/GameScene.swift"
-                  timestampString = "512322837.578698"
+                  timestampString = "512353864.977916"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "54"
@@ -166,7 +165,7 @@
                   moduleName = "Game5"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/abhineetsharma/BitBucket/p05-sharma/Game5/Game5/GameScene.swift"
-                  timestampString = "512322837.581201"
+                  timestampString = "512353864.980205"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -181,7 +180,7 @@
                   moduleName = "Game5"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/abhineetsharma/BitBucket/p05-sharma/Game5/Game5/GameScene.swift"
-                  timestampString = "512322837.583548"
+                  timestampString = "512353864.981908"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -196,7 +195,7 @@
                   moduleName = "Game5"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/abhineetsharma/BitBucket/p05-sharma/Game5/Game5/GameScene.swift"
-                  timestampString = "512322837.586119"
+                  timestampString = "512353864.983463"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "54"

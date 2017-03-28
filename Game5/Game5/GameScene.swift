@@ -1,11 +1,12 @@
 //
 //  GameScene.swift
-//  SerialChiller
+//  Game5
 //
-//  Created by Main Account on 9/30/16.
-//  Copyright © 2016 Razeware LLC. All rights reserved.
+//  Created by Abhineet Sharma on 3/20/17.
+//  Copyright © 2017 Abhineet Sharma. All rights reserved.
 //
 
+//
 import SpriteKit
 
 func + (left: CGPoint, right: CGPoint) -> CGPoint {
@@ -63,45 +64,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
     }
     
-    override func didMove(to view: SKView) {
-        // 2
-        let bgImage = SKSpriteNode(imageNamed: "game-background")
-        bgImage.position = CGPoint(x: size.width/2, y: size.height/2)
-        bgImage.zPosition = -1.0
-        addChild(bgImage)
-        
-        // Player
-        player.position = CGPoint(x: size.width * 0.1, y: size.height * 0.5)
-        addChild(player)
-        
-        // Static label
-        staticTimeLabel.text = "Killed Time"
-        staticTimeLabel.fontSize = 25
-        staticTimeLabel.fontColor = SKColor.green
-        staticTimeLabel.position = CGPoint(x: 0.83*size.width, y: 0.93*size.height)
-        addChild(staticTimeLabel)
-        
-        // Score label
-        killedTimeLabel.text = "0%"
-        killedTimeLabel.fontSize = 27
-        killedTimeLabel.fontColor = SKColor.green
-        killedTimeLabel.position = CGPoint(x: 0.83*size.width, y: 0.83*size.height)
-        addChild(killedTimeLabel)
-        
-        physicsWorld.gravity = CGVector.zero
-        physicsWorld.contactDelegate = self
-        
-        run(SKAction.repeatForever(
-            SKAction.sequence([
-                SKAction.run(addMonster),
-                SKAction.wait(forDuration: 1.0)
-                ])
-        ))
-        
-        let backgroundMusic = SKAudioNode(fileNamed: "woodies.caf")
-        backgroundMusic.autoplayLooped = true
-        addChild(backgroundMusic)
-    }
     
     func random() -> CGFloat {
         return CGFloat(Float(arc4random()) / 0xFFFFFFFF)
@@ -225,5 +187,46 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
         
     }
+    
+    override func didMove(to view: SKView) {
+        // 2
+        let bgImage = SKSpriteNode(imageNamed: "game-background")
+        bgImage.position = CGPoint(x: size.width/2, y: size.height/2)
+        bgImage.zPosition = -1.0
+        addChild(bgImage)
+        
+        // Player
+        player.position = CGPoint(x: size.width * 0.1, y: size.height * 0.5)
+        addChild(player)
+        
+        // Static label
+        staticTimeLabel.text = "Killed Time"
+        staticTimeLabel.fontSize = 25
+        staticTimeLabel.fontColor = SKColor.green
+        staticTimeLabel.position = CGPoint(x: 0.83*size.width, y: 0.93*size.height)
+        addChild(staticTimeLabel)
+        
+        // Score label
+        killedTimeLabel.text = "0%"
+        killedTimeLabel.fontSize = 27
+        killedTimeLabel.fontColor = SKColor.green
+        killedTimeLabel.position = CGPoint(x: 0.83*size.width, y: 0.83*size.height)
+        addChild(killedTimeLabel)
+        
+        physicsWorld.gravity = CGVector.zero
+        physicsWorld.contactDelegate = self
+        
+        run(SKAction.repeatForever(
+            SKAction.sequence([
+                SKAction.run(addMonster),
+                SKAction.wait(forDuration: 1.0)
+                ])
+        ))
+        
+        let backgroundMusic = SKAudioNode(fileNamed: "woodies.caf")
+        backgroundMusic.autoplayLooped = true
+        addChild(backgroundMusic)
+    }
+
     
 }
