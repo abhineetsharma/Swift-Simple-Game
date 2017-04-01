@@ -9,8 +9,6 @@
 //
 import SpriteKit
 import AVFoundation
-import AVFoundation
-
 
 func + (left: CGPoint, right: CGPoint) -> CGPoint {
     return CGPoint(x: left.x + right.x, y: left.y + right.y)
@@ -53,6 +51,7 @@ struct PhysicsCategory {
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
     
+    // 1
     
     let player = SKSpriteNode(imageNamed: "player")
     
@@ -89,13 +88,17 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         // Determine where to spawn the monster along the Y axis
         let actualY = random(min: monster.size.height/2, max: 0.6*size.height - monster.size.height/2)
         
-              monster.position = CGPoint(x: size.width + monster.size.width/2, y: actualY)
+        // Position the monster slightly off-screen along the right edge,
+        // and along a random position along the Y axis as calculated above
+        monster.position = CGPoint(x: size.width + monster.size.width/2, y: actualY)
         
-                addChild(monster)
+        // Add the monster to the scene
+        addChild(monster)
         
-               let actualDuration = random(min: CGFloat(1.0), max: CGFloat(10.0))
+        // Determine speed of the monster
+        let actualDuration = random(min: CGFloat(1.0), max: CGFloat(10.0))
         
-        
+        // Create the actions
         let actionMove = SKAction.move(to: CGPoint(x: -monster.size.width/2, y: actualY), duration: TimeInterval(actualDuration))
         let actionMoveDone = SKAction.removeFromParent()
         
@@ -111,13 +114,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         run(SKAction.playSoundFileNamed("pew-pew-lei.caf", waitForCompletion: false))
         
-        // 1 - Choose one of the touches to work with
         guard let touch = touches.first else {
             return
         }
         let touchLocation = touch.location(in: self)
         
-               let projectile = SKSpriteNode(imageNamed: "projectile")
+        let projectile = SKSpriteNode(imageNamed: "projectile")
         projectile.position = player.position
         
         projectile.physicsBody = SKPhysicsBody(circleOfRadius: projectile.size.width/2)
@@ -127,24 +129,19 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         projectile.physicsBody?.collisionBitMask = PhysicsCategory.None
         projectile.physicsBody?.usesPreciseCollisionDetection = true
         
-        
         let offset = touchLocation - projectile.position
         
-        // 4 - Bail out if you are shooting down or backwards
         if (offset.x < 0) { return }
         
-        // 5 - OK to add now - you've double checked position
         addChild(projectile)
         
-        // 6 - Get the direction of where to shoot
         let direction = offset.normalized()
         
-        // 7 - Make it shoot far enough to be guaranteed off screen
         let shootAmount = direction * 1000
         
-               let realDest = shootAmount + projectile.position
+        let realDest = shootAmount + projectile.position
         
-        // 9 - Create the actions
+       
         let actionMove = SKAction.move(to: realDest, duration: 2.0)
         let actionMoveDone = SKAction.removeFromParent()
         projectile.run(SKAction.sequence([actionMove, actionMoveDone]))
@@ -183,6 +180,47 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
         
     }
-    }
     
-   
+    override func didMove(to view: SKView) {
+        // 2
+        let bgImage = SKSpriteNode(imageNamed: "game-background")
+        bgImage.size = self.size;
+        bgImage.position = CGPoint(x: size.width/2, y: size.height/2)
+        bgImage.zPosition = -1.0
+        addChild(bgImage)
+        
+        // Player
+        player.position = CGPoint(x: size.width * 0.1, y: size.height * 0.5)
+        addChild(player)
+        
+        // Static label
+        staticTimeLabel.text = "Killed Time"
+        staticTimeLabel.fontSize = 25
+        staticTimeLabel.fontColor = SKColor.green
+        staticTimeLabel.position = CGPoint(x: 0.83*size.width, y: 0.93*size.height)
+        addChild(staticTimeLabel)
+        
+        // Score label
+        killedTimeLabel.text = "0%"
+        killedTimeLabel.fontSize = 27
+        killedTimeLabel.fontColor = SKColor.green
+        killedTimeLabel.position = CGPoint(x: 0.83*size.width, y: 0.83*size.height)
+        addChild(killedTimeLabel)
+        
+        physicsWorld.gravity = CGVector.zero
+        physicsWorld.contactDelegate = self
+        
+        run(SKAction.repeatForever(
+            SKAction.sequence([
+                SKAction.run(addMonster),
+                SKAction.wait(forDuration: 1.0)
+                ])
+        ))
+       
+        let backgroundMusic = SKAudioNode(fileNamed: "woodies.caf")
+        backgroundMusic.autoplayLooped = true
+        addChild(backgroundMusic)
+    }
+
+    
+}

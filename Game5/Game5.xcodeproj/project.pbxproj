@@ -74,6 +74,9 @@
 				C36E55511E7FAA2900FF1449 /* GameViewController.swift */,
 				C36E55531E7FAA2900FF1449 /* Main.storyboard */,
 				C36E55561E7FAA2900FF1449 /* Assets.xcassets */,
+				C3F9630E1E88CE85005E5DA6 /* woodies.caf */,
+				C3F9630F1E88CE85005E5DA6 /* background-music-aac.caf */,
+				C3F963101E88CE85005E5DA6 /* pew-pew-lei.caf */,
 				C338FF0F1E8EEDB60061B031 /* Moving-picture-snake-in-the-grass-animated-gif.gif */,
 				C36E55581E7FAA2900FF1449 /* LaunchScreen.storyboard */,
 				C36E555B1E7FAA2900FF1449 /* Info.plist */,
@@ -85,9 +88,6 @@
 		C3F9630D1E88CE70005E5DA6 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				C3F9630E1E88CE85005E5DA6 /* woodies.caf */,
-				C3F9630F1E88CE85005E5DA6 /* background-music-aac.caf */,
-				C3F963101E88CE85005E5DA6 /* pew-pew-lei.caf */,
 			);
 			name = Sounds;
 			sourceTree = "<group>";
